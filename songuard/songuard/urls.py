@@ -16,7 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+
 urlpatterns = [
-    url(r'^songlist/', include('songlist.urls')),
+    #admin line is default and unedited
     url(r'^admin/', admin.site.urls),
+    #url(r'^songlist/', include('songlist.urls'))
+    url(r'', include('songlist.urls'))
+
 ]
