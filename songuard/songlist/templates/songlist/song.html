@@ -1,17 +1,14 @@
-<html>
-    <head>
-        <title>{{song.title}}</title>
-    </head>
-    <body>
-        <div>
+{% extends 'songlist/base.html' %}
+{% block content %}
+        <div class="page-header">
             <h1><a href="">{{song.title}}</a></h1>
         </div>
 
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <div class="song">
+            <p>published: {{pub_date}}</p>
             <h2><a href="">{{ song.title }}</a></h2>
+            <h3><a href="">{{ song.artist }}</a></h3>
             <p>{{ song.text|linebreaksbr }}</p>
         </div>
-    </body>
-</html>
+{% endblock %}
