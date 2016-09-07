@@ -1,16 +1,23 @@
+{% extends 'songlist/base.html' %}
 
-{% load staticfiles %}
-<html>
-    <head>
+{% block content %}
+
+<p>Block content</p>
+<p>I need to remember how the songuard/songlist stuff breaks down.
+I think it's just that songlist is the app within the project.<br>
+To do<br>
+Back up terrible css and start again with bootstrap. <br>
+Add custom pages to dispay all songs, one specific song.<br>
+investigate options for giving users display options.<br>
+Add user auth.<br>
+Investigate other appy things to do that are more impressive than crud.<br>
+use some js.<br>
+Deploy to AWS.<br>
+Create tech portfolio site, blog etc.<br>
 
 
-      <link rel="stylesheet" href="{% static 'css/songlist.css' %}">
-      <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <title>{{song.title}}-Songuard</title>
-    </head>
 
-<body>
-<p> Welcome to Songuard.  Here is a list of songs already "guarded".
+<p> Welcome to Songuard.  Here is a list of songs already "guarded":</p>
 
 {% if latest_song_list %}
     <ul>
@@ -21,11 +28,13 @@
 {% else %}
     <p>No songs are available.</p>
 {% endif %}
+<br>
+<a href= "http://www.colorpicker.com/">Colour picker</a><br>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
- <a href= "http://127.0.0.1:8000/admin/">Admin is here.</a>
-
-
-
-</body>
-</html>
+{% endblock %}

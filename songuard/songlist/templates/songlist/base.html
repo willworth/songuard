@@ -2,17 +2,35 @@
 <html>
     <head>
 
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="{% static 'css/songlist.css' %}">
       <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <title>{{song.title}}-Songuard</title>
     </head>
     <body>
+
     <div class="page-header">
-        <h1><a href="/">Songuard</a></h1>
+        <a href="http://127.0.0.1:8000/">Songuard</a>
     </div>
-    <div class="content container">
+
+
+    <div class="navbar">
+      <ul >
+      <li class="active"><a href="http://127.0.0.1:8000/">Home</a></li>
+      <li><a href= "http://127.0.0.1:8000/admin/">Admin is here.</a></li>
+      <li><a href= "http://127.0.0.1:8000/song/3/">Here is song 3.</a></li>
+      <li><a href="#">Add song</a></li>
+      <li><a href="#">List all</a></li>
+      <li><a href="#">My songs</a></li>
+      <li><a href="#">Random!</a></li>
+    </ul>
+    </div>
+
+
+
+
+    <div class="content-container">
         <div class="row">
             <div class="col-md-8">
             {% block content %}
@@ -20,5 +38,11 @@
             </div>
         </div>
     </div>
+<div class="footer">
+<footer>
+  "My imagination can picture no fairer happiness than to continue living for art."  Clara Schumann
+
+</footer>
+</div>
 </body>
 </html>

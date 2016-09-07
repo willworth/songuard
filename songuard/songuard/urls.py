@@ -20,7 +20,25 @@ from django.contrib import admin
 urlpatterns = [
     #admin line is default and unedited
     url(r'^admin/', admin.site.urls),
+
+    #anything beyond/apart from admin is pushed to urls in the songlist app.
     #url(r'^songlist/', include('songlist.urls'))
     url(r'', include('songlist.urls'))
 
 ]
+
+#
+# urlpatterns += patterns(
+#     # 'django.contrib.auth.views',
+#     #
+#     # url(r'^login/$, 'login',
+#     #     {'template_name': 'login.html'},
+#     #     name='songuard_login'),
+#     #
+#     # url(r'^logout/$, 'logout',
+#     #     {'next_page': 'songuard_home'},
+#     #     name='songuard_logout'),
+#
+#
+#
+# )

@@ -1,3 +1,20 @@
+will@Samsung ~ $ cd dev/proj3/
+will@Samsung ~/dev/proj3 $ source myvenv/bin/activate
+(myvenv) will@Samsung ~/dev/proj3 $ cd songuard/
+(myvenv) will@Samsung ~/dev/proj3/songuard $ python manage.py runserver
+Performing system checks...
+
+
+
+
+
+
+
+
+
+
+
+
 http://127.0.0.1:8000/
 
 URLs
